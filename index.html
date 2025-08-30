@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Smart Expense Splitter</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header>
+
+      <h1>💸 Smart Expense Splitter</h1>
+
+      <p>Split bills fairly, track categories, and get payment reminders</p>
+
+    </header>
+
+    <section class="card">
+
+      <h2>Add Participant</h2>
+
+      <input type="text" id="nameInput" placeholder="Enter name" />
+
+      <button onclick="addParticipant()">Add</button>
+
+      <ul id="participantsList" class="list"></ul>
+
+    </section>
+
+    <section class="card">
+
+      <h2>Log Expense</h2>
+
+      <input type="text" id="payerInput" placeholder="Who paid?" />
+
+      <input type="number" id="amountInput" placeholder="Amount (₹)" />
+
+      <select id="categoryInput">
+
+        <option value="">Select category</option>
+
+        <option value="Food">Food</option>
+
+        <option value="Travel">Travel</option>
+
+        <option value="Utilities">Utilities</option>
+
+        <option value="Other">Other</option>
+
+      </select>
+
+      <button onclick="addExpense()">Log Expense</button>
+
+    </section>
+
+    <section class="card">
+
+      <h2>Balances</h2>
+
+      <ul id="balancesList" class="list"></ul>
+
+    </section>
+
+    <section class="card">
+
+      <h2>Payment Reminders</h2>
+
+      <ul id="remindersList" class="list"></ul>
+
+    </section>
+
+    <section class="card">
+
+      <h2>Category Breakdown</h2>
+
+      <ul id="categoryList" class="list"></ul>
+
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
